@@ -67,7 +67,7 @@ pipeline
 				sh "env"
 				//sh "curl https://mvnrepository.com/"
 				script {
-					new stages.WebhookDecision(this).exec()
+					new stages.Start(this).exec()
 				}
 			}
 		}

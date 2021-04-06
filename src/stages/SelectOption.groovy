@@ -19,8 +19,7 @@ class SelectOption extends Stage {
 		script.registry.init()
         script.log.info "EVENTO desencadenador: ${script.TRIGGER}"
         script.log.info "RAMA DESCARGADA: ${script.BRANCH}"
-        script.log.info "ESTADO obtenido del TAG: ${script.ESTADO}"	
-        script.log.info "ESTADO obtenido del TAG: ${script.TRIGGER}"	
+        script.log.info "ESTADO obtenido del TAG: ${script.ESTADO}"		
 
         //Opción 1: Llamada de webhook por push
         if (script.TRIGGER == "push"){
