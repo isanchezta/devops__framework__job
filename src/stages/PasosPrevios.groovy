@@ -79,6 +79,9 @@ class PasosPrevios extends Stage{
 		}
 		
 		script.log.info "GIT_CREDENTIALSID: ${script.GIT_CREDENTIALSID}"
+
+		//Se añade para prueba en local
+		script.env.setProperty("GIT_CREDENTIALSID",  "GissGithubDevops")
 		
 	}
 
