@@ -62,7 +62,7 @@ pipeline
 
 	stages {
 
-		stage('** DECISION SEGÚN WEBHOOK Y ESTADO **') {
+		stage('** START **') {
 			steps {
 				sh "env"
 				//sh "curl https://mvnrepository.com/"
@@ -90,7 +90,7 @@ pipeline
 			}
 		}
 
-   		stage('** OBTENER VERSION A DESPLEGAR **') {
+   		stage('** VERSIÓN **') {
 			steps {
 		    	script {
 					new stages.VersionDeploy(this).exec()
@@ -98,7 +98,7 @@ pipeline
 	    	}
 		}
 
-		stage('** TOMA DE DECISIONES SEGÚN ESTADO Y RAMA **') {
+		stage('** PREPARACIÓN INTEGRACIÓN **') {
 			steps {
 		    	script {
 					new stages.SelectOption(this).exec()
@@ -106,7 +106,7 @@ pipeline
 	    	}
 		}
 
-//		stage('** OBTENER A TRAVES DEL ESTADO Y LA RAMA EL ENTORNO **') {
+//		stage('** ENTORNO **') {
 //			steps {
 //				script {
 //					new stages.EntornoDeploy(this).exec()
@@ -114,7 +114,7 @@ pipeline
 //			}
 //		}
 
-//		stage('** FASE COMPILACION **') {
+//		stage('** BUILD **') {
 //			steps {
 //				script {
 //					new stages.Compilacion(this).exec()
@@ -122,16 +122,16 @@ pipeline
 //			}                       
 //		}
 
-//		stage('** DESCARGA A ARTIFACTORY **') {
+//		stage('** SUBIDA NEXUS **') {
 //			steps {
 //				script {
-//					new stages.DownloadArtifactory(this).exec()
+//					
 //				}     
 //		   	}                
 //		}
 
 	
-//		stage('** INVOCAR SCRIPT PERSONALIZADO DEL ENTORNO DE DESPLIEGUE **') {
+//		stage('** DESPLIEGUE **') {
 //			steps {
 //				script {
 //					new stages.RunDeploy(this).exec()
