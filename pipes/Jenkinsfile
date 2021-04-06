@@ -49,8 +49,8 @@ pipeline
 		//			CRYPT_CREDENTIAL_MANAGER	: credencial de JK de tipo text que tiene al contraseï¿½a de desencriptacion del gestor
 		// GIT_URL="https://github.com/ITACCIONA/oficina_devops_jenkis_framework.git"
 
-		//GIT_URL="https://gitlab.pro.portal.ss/devops/framework/devops__framework__job.git"
-		GIT_URL="https://github.com/isanchezta/devops__framework__job.git"
+		GIT_URL="https://gitlab.pro.portal.ss/devops/framework/devops__framework__job.git"
+		//GIT_URL="https://github.com/isanchezta/devops__framework__job.git"
 		PRJ="pipes" // DENOMINACION DEL PROYECTO EN DONDE SE ALOJAN LOS ARTEFACTOS EN ARTIFACTORY
 		ARTIFACTORY_REPO="oficina_devops-deploy"// REPOSITORIO DONDE SE ALOJA LOS ARTEFACTOS DEL PROYECTO
 		CRYPT_CREDENTIAL_MANAGER="MISECRETO_CLAVE1"
