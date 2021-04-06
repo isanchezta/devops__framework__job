@@ -1,0 +1,11 @@
+<smtp>
+		<credential>SEND_EMAIL_CRED</credential>	<!-- Credencial user/passwd por la cual validar -->
+		<host>smtp.office365.com</host>				<!-- host smtp -->
+		<port>587</port>							<!-- por smtp -->
+		<auth>login</auth>							<!-- tipo de  autenticacion-->
+ 		<starttls>true</starttls>					<!-- uso de protocolo seguro tls -->
+ 		<nss_config_dir></nss_config_dir>			<!-- directorio de certificados -->
+ 		<from>oficina.devops@acciona.com</from>		<!-- remitente email -->
+ 		<ssl_verify>ignore</ssl_verify>				<!-- verificar certificado -->
+</smtp>
+ 

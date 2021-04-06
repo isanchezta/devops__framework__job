@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agents>
+	<agent label="linux">
+		<GRADLE_HOME>/opt/gradle/gradle-6.0.1</GRADLE_HOME>
+		<MAVEN_HOME>/opt/JENKINSSLAVE/maven/maven-3.6.0/</MAVEN_HOME>
+		<JAVA_HOME>/opt/jdk/1.8.0_201</JAVA_HOME>
+	</agent>
+	
+	<agent label="windows">
+		<GRADLE_HOME>C:\\gradle\\gradle-6.0.1</GRADLE_HOME>
+		<MAVEN_HOME>C:\\apache-maven-3.6.1</MAVEN_HOME>
+     	<JAVA_HOME>C:\\Program Files\\Java\\jdk1.8.0_221</JAVA_HOME>
+	</agent>
+</agents>

@@ -1,0 +1,13 @@
+<locks>
+	<lock environment="DES" master="YES">
+		<name>reslock</name>
+	</lock>
+	<lock environment="PRO" master="YES">
+		<name>semaforo_pro</name>
+		<!-- 
+		<manual timeout="60" unit="MINUTES">
+			<message>Continuar despliegue?</message>
+		</manual>
+		-->
+	</lock>
+</locks>

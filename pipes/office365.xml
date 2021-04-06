@@ -1,0 +1,13 @@
+<!-- Cuentas a las cuales se tiene que notificar los avances del pipeline 
+https://wiki.jenkins.io/display/JENKINS/Office+365+Connector+Plugin
+-->
+<accounts>
+	<!--  Para enviar las notificaciones a los usuarios de la organizacion Acciona u a otras que estén en office 365
+	Se utiliza el pluging de conexion de JK a office 365 enviando mensajes
+	Para crear estos webhook acceder a la guia: 
+	 -->	
+	<account>
+		<username>jpalmero.ext@acciona.com</username>
+		<webhook>https://outlook.office.com/webhook/daac5470-9e35-48f0-9f16-df6c7ea8dfa9@f5fd9e16-114f-4820-8de1-6312daf9aebb/JenkinsCI/d253b2431cb34929a2c61f5aaacc845a/e2775ea3-df5d-4881-91d5-f74ee3310c0a</webhook>
+	</account>
+</accounts>

@@ -1,0 +1,10 @@
+<notificaciones>
+<text>
+RESULT: %s
+LOG: %s
+LAST STAGE: %s
+STAGES: 
+%s
+</text>
+<subject>%s</subject>	
+</notificaciones>

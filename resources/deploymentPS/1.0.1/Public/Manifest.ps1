@@ -1,0 +1,1 @@
+﻿#New-ModuleManifest -Path "deploymentPS\1.0.0\deploymentPS.psd1" -ModuleVersion "1.0.0" -Author "Wilmer Andrade"

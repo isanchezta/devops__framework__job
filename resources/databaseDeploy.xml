@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<db>
+
+	<hostname>svdevslvlin2.acciona.int</hostname>
+	<port>5432</port>
+	<database>jenkinsdb</database>
+
+	<username>postgres</username>
+	<password>docker</password>
+</db>

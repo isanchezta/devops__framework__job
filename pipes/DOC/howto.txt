@@ -1,0 +1,31 @@
+Miniguia de uso de pipeline JK
+
+Descagar del repositorio oficina_deploy, en el directorio pipes el pipes-X.Y.Z.zip que se considere.
+El fichero pipes-DOC-X.Y.Z.zip se corresponde con la documentación de la libreria Acciona FW utilizda por el pipe clases y funciones que se pueden utilizar desde el pipe.
+Desplegar en el directorio pipes el contenido del zip.
+Acceder al fichero pipes/Jenkinsfile y personalizarlo:
+
+en node:
+ git.url 			: URL al repositorio en donde se localiza el proyecto y existe el directorio de pipes  
+ git.credentialsId	: Credencial dada de alta dentro de JENKINS con acceso al repositorio
+ 
+en environment:
+			PRJ					: nombre del proyecto y carpeta donde se aloja los componentes dentro del REPO deploy de artifactory
+			ARTIFACTORY_REPO	: repositorio dentro de artifactory donde se aloja el componente a desplegar
+			ARTIFACTORY_USERNAME: usaurio de acceso a ARTIFACTORY
+			ARTIFACTORY_PWD		: constraseñaa de acceso a ARTIFACTORY
+			
+Libreria de uso 
+
+@Library('AccionaFwDevOps@0.7.1') _ : Asegurarse que la version de la librería que usa es la adecuada. Lo normal es que la version del pipe sea también la de la liberería.
+			
+Crear en los directorios por entorno el script que tendrá como objetivo el despligue en dicho entorno como el de compilación.
+
+Una vez establecido el Jenkinsfile en el repositorio, de forma automática se creará el JOB cuando el repositorio se sincronice con GitHub (en principio a diario)
+
+Una vez creado el job se podrá invocar desde Azure, ya sea desde el pipeline o bien por los services hook. Seleccionando dentro de JK el job, para dicho proyecto y rama, agregand los parámtros adecuados.
+
+Los JOBS tendrán que ser ejecutados por los usarios de servicio, es decir en la creación del acceso a JK se tendrá que hacer por medio de los usuarios de servicio.
+Las credenciales de acceso al repositorio y el acceso a artifactory tambien tendrán que ser por los usuarios de servicio.
+ 
+ 
