@@ -6,11 +6,7 @@ pipeline
 	// Por defecto serÃƒÂ¡ aconsejable ejecutar los pipes en un esclavo linux
 	// Si es un esclavo widnows tendrÃƒÂ¡ que asegurarse que se dispone de las herramientas
 	// necesarias instaladas para ejecutar el proceso como el bash, git,  y otras ...
-  	agent { kubernetes {
-      label 'prosa-was8' 
-      cloud 'openshift'
-  		} 
-  	}
+  	agent any
   	
   	options { 
   		skipDefaultCheckout()
