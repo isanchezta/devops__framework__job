@@ -65,9 +65,9 @@ pipeline
 			steps {
 				sh "env"
 				//sh "curl https://mvnrepository.com/"
-				/*script {
+				script {
 					new stages.WebhookDecision(this).exec()
-				}*/
+				}
 			}
 		}
 	
