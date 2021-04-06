@@ -69,13 +69,13 @@ pipeline
 			steps {
 				sh "env"
 				//sh "curl https://mvnrepository.com/"
-				script {
+				/*script {
 					new stages.WebhookDecision(this).exec()
-				}
+				}*/
 			}
 		}
 	
-		stage('** PASOS PREVIOS **') {
+		/*stage('** PASOS PREVIOS **') {
 			steps {
 				//sh "env"
 				//sh "curl https://mvnrepository.com/"
@@ -107,7 +107,7 @@ pipeline
 					new stages.SelectOption(this).exec()
 				}		    	
 	    	}
-		}
+		}*/
 
 //		stage('** OBTENER A TRAVES DEL ESTADO Y LA RAMA EL ENTORNO **') {
 //			steps {
