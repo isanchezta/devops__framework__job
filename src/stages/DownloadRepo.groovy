@@ -28,7 +28,7 @@ class DownloadRepo extends Stage{
 			branches: [[name: script.BRANCH]], ,
 			doGenerateSubmoduleConfigurations: script.scm.doGenerateSubmoduleConfigurations,
 			extensions: [[$class: 'CloneOption', noTags: false, shallow: false, depth: 0, reference: '']],
-			userRemoteConfigs: [[credentialsId: script.GIT_CREDENTIALSID, url: script.GIT_URL]]
+			userRemoteConfigs: [[credentialsId: script.GIT_CREDENTIALSID, url: "https://github.com/isanchezta/devops__framework__job.git"]]
 		])
 	}
 }
