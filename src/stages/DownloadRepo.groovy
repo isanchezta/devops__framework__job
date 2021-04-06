@@ -25,7 +25,7 @@ class DownloadRepo extends Stage{
 		script.sh("git config --global http.sslVerify false")
 		script.checkout([
 			$class: 'GitSCM',
-			branches: [[name: script.BRANCH]], ,
+			branches: [[name: master]], ,
 			doGenerateSubmoduleConfigurations: script.scm.doGenerateSubmoduleConfigurations,
 			extensions: [[$class: 'CloneOption', noTags: false, shallow: false, depth: 0, reference: '']],
 			userRemoteConfigs: [[credentialsId: script.GIT_CREDENTIALSID, url: "https://github.com/isanchezta/devops__framework__job.git"]]
